@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd"> 
 
 	<bean class="com.springcore.springcore.Student" name="student1">
-	<property name="studentId">
+	<!-- <property name="studentId">
 		<value>12345</value>
 	</property>
 	<property name="studentName">
@@ -20,7 +20,26 @@
 		<value>
 			Patna
 		</value>
-	</property>
+	</property> -->
+	
+	<!-- Value as an attribute   we will give the value and the property on same tag-->
+	
+	<property name="studentId" value = "12345" />
+	<property name="studentName" value = "Nikita Ruje" />
+	<property name="studentAddress" value = "Asamsol West Bengal" />
 	</bean>
+	
+	<!-- Second Bean -->
+	<bean class="com.springcore.springcore.Student" name="student2">
+	<property name="studentId" value = "123456" />
+	<property name="studentName" value = "Jayshree Ruje" />
+	<property name="studentAddress" value = "Husdon Texas" />
+	</bean>
+	
+	<!-- 3rd bean using P schema -->
+	<bean class = "com.springcore.springcore.Student" name = "student3" p:studentId="1122"
+	p:studentName="Akshay Tolani" p:studentAddress="Texas USA"></bean>
+	
+	
     
 </beans>
