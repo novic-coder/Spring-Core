@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    
+    <context:annotation-config/>
+    
+    <!-- Dependent Bean  -->
+    <!-- Autowired dependency Injection byName -->
+    
+    <bean class = "com.springcore.autowiring.Address" name = "address1">
+    <property name= "street" value= "Hasanpura Road"/>
+    <property name ="city" value = "patna"/>
+    <property name = "pincode" value ="800002"/>
+    </bean>
+    
+    <bean class = "com.springcore.autowiring.Employee" name = "employee" autowire = "byName">
+    <property name ="eName" value = "Suryakumar Yadav"/>
+    <property name = "salary" value = "100000"/>
+    </bean>
+    
+    <!-- Autowired dependency Injection byType -->
+    
+    <bean class = "com.springcore.autowiring.Address" name = "address">
+    <property name= "street" value= "Sugam Park"/>
+    <property name ="city" value = "Asansol"/>
+    <property name = "pincode" value ="730211"/>
+    </bean>
+    
+    <bean class = "com.springcore.autowiring.Employee" name = "employee1" autowire = "constructor">
+    <property name ="eName" value = "Nikita Ruje"/>
+    <property name = "salary" value = "50000"/>
+    </bean>
+    
+    
+</beans>
