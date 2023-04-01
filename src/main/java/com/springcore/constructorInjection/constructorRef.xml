@@ -34,7 +34,7 @@
 		
 	</bean>
 	
-	<!-- Implementing list -->
+	<!-- Implementing list inside the constructor Injection -->
 	
 	<bean class="com.springcore.constructorInjection.Certificate" name="certificate3" 
 		c:certificateName = "Aws Certification">
