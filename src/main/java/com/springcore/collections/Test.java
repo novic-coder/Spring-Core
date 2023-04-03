@@ -9,7 +9,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/collections/configurationconfig.xml");
-		Employee emp1 = (Employee) context.getBean("emp");
+		Employee emp1 = (Employee) context.getBean("emp1");
 		System.out.println(emp1.getName());
 		System.out.println(emp1.getPhone());
 		System.out.println(emp1.getCourses());

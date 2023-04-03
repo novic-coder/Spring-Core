@@ -13,7 +13,7 @@
     <!-- Dependent Bean  -->
     <!-- Autowired dependency Injection byName -->
     
-    <bean class = "com.springcore.autowiring.Address" name = "address1">
+    <bean class = "com.springcore.autowiring.Address" name = "address">
     <property name= "street" value= "Hasanpura Road"/>
     <property name ="city" value = "patna"/>
     <property name = "pincode" value ="800002"/>

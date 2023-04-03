@@ -13,26 +13,13 @@
     <!-- Dependent Bean  -->
     <!-- Autowired dependency Injection byName -->
     
-    <bean class = "com.springcore.autowiring.Address" name = "address">
+    <bean class = "com.sprincore.autowired.byannotation.Address" name = "address1">
     <property name= "street" value= "Hasanpura Road"/>
     <property name ="city" value = "patna"/>
     <property name = "pincode" value ="800002"/>
     </bean>
     
-    <bean class = "com.springcore.autowiring.Employee" name = "employee" autowire = "byName">
-    <property name ="eName" value = "Suryakumar Yadav"/>
-    <property name = "salary" value = "100000"/>
-    </bean>
-    
-    <!-- Autowired dependency Injection byType -->
-    
-    <bean class = "com.springcore.autowiring.Address" name = "address">
-    <property name= "street" value= "Sugam Park"/>
-    <property name ="city" value = "Asansol"/>
-    <property name = "pincode" value ="730211"/>
-    </bean>
-    
-    <bean class = "com.springcore.autowiring.Employee" name = "employee1" autowire = "constructor">
+    <bean class = "com.sprincore.autowired.byannotation.Employee" name = "employee">
     <property name ="eName" value = "Nikita Ruje"/>
     <property name = "salary" value = "50000"/>
     </bean>
